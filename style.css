@@ -25,19 +25,22 @@ header {
     min-height: 600px;
     width: 100%;
 }
-header .header-content{
+
+header .header-content {
     margin-top: 69px;
     min-width: 100%;
     padding: 24px;
 }
-.header-content h1{
+
+.header-content h1 {
     width: 278px;
     font-family: var(--secondary-font);
     color: var(--white-text-color);
     font-size: 2.4rem;
     font-weight: 400;
 }
-.header-content p{
+
+.header-content p {
     color: var(--white-text-color);
     font-size: 1.4rem;
     padding-top: 24px;
@@ -46,61 +49,156 @@ header .header-content{
     min-height: 132px;
     font-weight: 400;
 }
-.header-content .buttons{
+
+.header-content .buttons {
     display: flex;
     flex-direction: column;
     gap: 24px;
     min-width: 381px;
     width: 100%;
 }
-.buttons button{
-     border-radius: 100px;
-     background-color: var(--white-text-color);
-     border: none;
-     min-height: 54px;
-     max-width: 100%;
-     font-size: 16px;
+
+.buttons button {
+    border-radius: 100px;
+    background-color: var(--white-text-color);
+    border: none;
+    min-height: 54px;
+    max-width: 100%;
+    font-size: 16px;
 }
-.buttons button:last-child{
+
+.buttons button:last-child {
     background-color: var(--black-text-color);
     color: var(--white-text-color);
 }
-main section{
+
+main section {
     min-height: 600px;
     display: flex;
     flex-direction: column;
     padding: 40px 24px;
 }
-main .section2,.section4{
+
+main .section2,
+.section4 {
     background-color: var(--gray-background-color);
 }
-main section h3{
+
+main section h3 {
     font-weight: 800;
     font-size: 2.4rem;
     color: var(--black-text-color);
 }
-main section p{
+
+main section p {
     color: var(--black-text-color);
     font-size: 1.4rem;
     font-weight: 400;
     margin-top: 24px;
 }
-main section h2{
+
+main section h2 {
     font-family: var(--secondary-font);
     font-size: 2.4rem;
     color: var(--black-text-color);
     font-weight: 400;
 }
-section img{
+
+section img {
     max-width: 100%;
 }
-footer{
+
+footer {
     background-color: var(--black-text-color);
     height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer img{
+
+footer img {
     max-width: 33%;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+
+    header {
+        min-height: 459px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    header .header-content {
+        max-width: 757px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 757px;
+        margin: 94px auto;
+        padding: 0;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .header-content p {
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        min-width: 100%;
+        font-size: 1rem;
+
+    }
+
+    .header-content .buttons {
+        flex-direction: row;
+        max-width: 500px;
+        gap: 24px;
+    }
+
+    .buttons button {
+        min-height: 50px;
+        padding: 10px 17px;
+        font-size: 16px;
+    }
+
+    main section {
+        min-height: 448px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 80px;
+    }
+
+    section img {
+        max-width: 607px;
+    }
+
+    main section p {
+        font-size: 1rem;
+
+    }
+
+    main section h3 {
+        font-size: 2.6rem;
+    }
+
+    main section h2 {
+        font-size: 2.4rem;
+    }
+
+    .section-text {
+        max-width: 351px;
+    }
+
+    .section1 .section-text {
+        max-width: 348px;
+    }
+
 }
