@@ -5,6 +5,7 @@
     --secondary-font: "Luckiest Guy", cursive;
     --white-text-color: #FFFFFF;
     --black-text-color: #23272A;
+    --gray-background-color: #F6F6F6;
 }
 
 * {
@@ -21,23 +22,24 @@ header {
     background-size: cover;
     background-position: 72.8% center;
     background-repeat: no-repeat;
-    height: 600px;
+    min-height: 600px;
+    width: 100%;
 }
 header .header-content{
     margin-top: 69px;
-    min-width: 428px;
+    min-width: 100%;
     padding: 24px;
 }
 .header-content h1{
     width: 278px;
     font-family: var(--secondary-font);
     color: var(--white-text-color);
-    font-size: 32px;
+    font-size: 2.4rem;
     font-weight: 400;
 }
 .header-content p{
     color: var(--white-text-color);
-    font-size: 18px;
+    font-size: 1.4rem;
     padding-top: 24px;
     padding-bottom: 24px;
     min-width: 381px;
@@ -49,15 +51,56 @@ header .header-content{
     flex-direction: column;
     gap: 24px;
     min-width: 381px;
+    width: 100%;
 }
 .buttons button{
      border-radius: 100px;
      background-color: var(--white-text-color);
      border: none;
      min-height: 54px;
+     max-width: 100%;
      font-size: 16px;
 }
 .buttons button:last-child{
     background-color: var(--black-text-color);
     color: var(--white-text-color);
+}
+main section{
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+}
+main .section2,.section4{
+    background-color: var(--gray-background-color);
+}
+main section h3{
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: var(--black-text-color);
+}
+main section p{
+    color: var(--black-text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 24px;
+}
+main section h2{
+    font-family: var(--secondary-font);
+    font-size: 2.4rem;
+    color: var(--black-text-color);
+    font-weight: 400;
+}
+section img{
+    max-width: 100%;
+}
+footer{
+    background-color: var(--black-text-color);
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    max-width: 33%;
 }
