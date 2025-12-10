@@ -188,17 +188,32 @@ footer img {
     main section h3 {
         font-size: 2.6rem;
     }
-
-    main section h2 {
-        font-size: 2.4rem;
-    }
-
     .section-text {
         max-width: 351px;
+        min-width: 351px;
     }
 
     .section1 .section-text {
         max-width: 348px;
     }
 
+    main .section2 img {
+        order: 1;
+    }
+
+    main section h2 {
+        font-size: 2.4rem;
+        width: 608px;
+        text-align: center;
+    }
+    main .section4{
+        flex-direction: column;
+    }
+    .section4 p{
+        text-align: center;
+        width: 802px;
+    }
+    footer img{
+        max-width: 20%;
+    }
 }
